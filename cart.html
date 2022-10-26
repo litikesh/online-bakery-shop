@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Page</title>
+    <!-- style sheet -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- fontawesome  -->
+    <script
+      src="https://kit.fontawesome.com/76e179e1bc.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="navbar">
+          <div class="navbar-wrapper">
+            <!-- logo -->
+            <a href="#" class="heading">
+              <img src="./images/logo/logo-no-background.png" alt="logo" />
+            </a>
+            <!-- links -->
+            <ul class="navbar-nav">
+              <li>
+                <a href="/" class="nav-link"> Home </a>
+              </li>
+              <li>
+                <a href="/" class="nav-link"> Your Order </a>
+              </li>
+              <li>
+                <a href="/" class="nav-link"> Our Menu </a>
+              </li>
+              <li>
+                <a href="/" class="nav-link"> About </a>
+              </li>
+            </ul>
+
+            <!-- search bar -->
+            <div class="search-box">
+              <div class="header-search-container">
+                <form action="">
+                  <input
+                    type="search"
+                    class="search-field"
+                    placeholder="Enter your product name..."
+                    onkeydown="myFunction()"
+                  />
+
+                  <button type="submit" value="Search" class="search-btn">
+                    <i class="fa fa-search"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+
+            <!-- Right Icons -->
+            <div class="navbar-btn-group">
+              <div class="action">
+                <a href="/login.html">
+                  <button class="shopping-cart-btn">
+                    <i class="fa fa-user-circle-o"></i>
+                  </button>
+                </a>
+              </div>
+              <div class="action">
+                <a href="/cart.html">
+                  <button class="shopping-cart-btn cart">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <span class="count">0</span>
+                  </button>
+                </a>
+              </div>
+            </div>
+
+            <div class="hamburger-menu">
+              <div class="bar-top"></div>
+              <div class="bar-middle"></div>
+              <div class="bar-bottom"></div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div class="cart-Heading">
+        <h1>
+          SHOPPING CART
+          <hr class="line" />
+        </h1>
+      </div>
+      <!-- empty -->
+      <div class="cart-inner"></div>
+
+      <!-- cart item -->
+      <div class="cart__PDetails">
+        <div class="cart-item"></div>
+        <!-- order summary -->
+        <div class="summary">
+          <h1 class="summary__title">ORDER SUMMARY</h1>
+          <div class="summaryItem">
+            <div class="SummaryItemText">
+              <h6>Price</h6>
+              <span class="total__product">
+                (<span class="cart-count"></span> item)
+              </span>
+            </div>
+            <span class="SummaryItemPrice">
+              <h5>Rs. &nbsp;</h5>
+              <span class="item-price"> </span>
+            </span>
+          </div>
+          <div class="summaryItem">
+            <div class="SummaryItemText">
+              <h6>Discount</h6>
+            </div>
+            <span class="SummaryItemPrice" style="color: rgb(0, 147, 0)">
+              <h5>- Rs. &nbsp;</h5>
+              50
+            </span>
+          </div>
+          <div class="summaryItem">
+            <div class="SummaryItemText">
+              <h6>Delivery Charges</h6>
+            </div>
+            <span class="SummaryItemPrice">
+              <h5>FREE</h5>
+            </span>
+          </div>
+          <hr />
+          <div class="summaryItem">
+            <div class="SummaryItemText">
+              <h6>Total</h6>
+            </div>
+            <span class="SummaryItemPrice">
+              <h5>Rs. &nbsp;</h5>
+              <span class="total-amount"> </span>
+            </span>
+          </div>
+          <button class="btn check__btn">CHECKOUT NOW</button>
+        </div>
+      </div>
+    </div>
+    <script src="./js/addToCart.js"></script>
+    <!-- <script src="./js/index.js"></script> -->
+  </body>
+</html>
